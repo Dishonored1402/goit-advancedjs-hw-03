@@ -1,10 +1,7 @@
 const BASE_URL = 'https://pixabay.com/api/';
-const API_KEY = 'YOUR_PIXABAY_API_KEY_HERE';
+const API_KEY = '53252560-1c4ffe9c456d309b0775dfd67';
 
-/**
- * Виконує HTTP-запит до Pixabay API за рядком пошуку.
- * Повертає проміс з об'єктом відповіді (response.json()).
- */
+
 export function fetchImagesByQuery(query) {
   const searchParams = new URLSearchParams({
     key: API_KEY,
