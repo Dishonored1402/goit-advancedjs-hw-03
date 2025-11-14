@@ -10,11 +10,30 @@
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
+    
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <section class="section">
+        <div class="container">
+          <form class="search-form" id="search-form">
+            <input
+              type="text"
+              name="searchQuery"
+              class="search-form-input"
+              placeholder="Search images..."
+              autocomplete="off"
+            />
+            <button type="submit" class="search-form-button">Search</button>
+          </form>
+
+          <div class="loader-wrapper is-hidden">
+            <span class="loader">Loading...</span>
+          </div>
+
+          <ul class="gallery"></ul>
+        </div>
+      </section>
     </main>
+
 
     <load src="./partials/footer.html" />
 
