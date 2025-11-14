@@ -57,7 +57,6 @@ function handleSearchFormSubmit(event) {
       lightbox.refresh();
     })
     .catch(error => {
-      // Помилка запиту вже оброблена тостом
       iziToast.error({
         title: 'Error',
         message: 'Something went wrong. Please try again later.',
