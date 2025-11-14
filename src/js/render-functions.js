@@ -49,9 +49,6 @@ export function createGalleryMarkup(images) {
     .join('');
 }
 
-/**
- * Очищає вміст галереї.
- */
 export function clearGallery(container) {
   if (container) {
     container.innerHTML = '';
